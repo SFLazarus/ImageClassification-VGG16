@@ -17,8 +17,7 @@ VGG16 is CNN for large-scale image recoginition with 13 convolutional layers fol
 ![](https://tech.showmax.com/2017/10/convnet-architectures/image_0-8fa3b810.png)    
 
 # Total Parameters
- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-
+![](https://i.stack.imgur.com/CCefk.png)
 
 # Dataset
 - MNIST – Numbered (0-9) images dataset
@@ -42,6 +41,13 @@ VGG16 is CNN for large-scale image recoginition with 13 convolutional layers fol
 - Training Accuracy-72%
 - Test Accuracy- 61%
 - Weights after training our model -[Weights and Biases File](https://1drv.ms/u/s!AoyUorepwYac61hvk-dm0BGqRpPM?e=vIe5pO)
+- P.S. Couldn't upload weights file because of github maximum size limit.
+
+# Results
+- Loss Plot
+- ![](https://github.com/SFLazarus/ImageClassification-VGG16/blob/main/reports/iterationsVSloss.png)
+- Accuracy Plot
+- ![](https://github.com/SFLazarus/ImageClassification-VGG16/blob/main/reports/iterationsVSaccuracy.png)
 # Optimization implemented
 ## Dropout
 - One of the issues with Deep Learning Neural Networks is overfitting. By randomly dropping out the nodes during training the Neural network, the problem of overfitting can be mitigated. This is called Dropout. It is a regularization process that approximates training of large neural networks with multiple architectures in parallel. While training, some of the outputs of layers are randomly ignored. It makes the current layer look like a different layer with different number of nodes. We have used a dropout probability of 0.5 while training a given node in a layer, where 1.0 means no dropout, and 0.0 means no outputs from the layer. It should be used between the first two FullyConnected layers to avoid the overfitting.
